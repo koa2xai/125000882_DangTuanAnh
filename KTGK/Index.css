@@ -1,0 +1,240 @@
+:root {
+    --bg-primary: #f4f4f4;
+    --bg-card: #ffffff;
+    --bg-header: #0056b3;
+    --text-primary: #333333;
+    --text-light: #ffffff;
+    --color-price: #6400e6;
+    --color-btn: #ff4d4d;
+    --color-btn-submit: #0056b3;
+    --border-color: #cccccc;
+    --input-bg: #ffffff;
+}
+
+body:has(#themecolor:checked) {
+    --bg-primary: #1e1e1e;
+    --bg-card: #2a2a2a;
+    --bg-header: #0d3b66;
+    --text-primary: #f0f0f0;
+    --border-color: #444444;
+    --input-bg: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "banner"
+        "main"
+        "form"
+        "footer";
+    grid-template-columns: 1fr;
+}
+
+.header {
+    grid-area: header;
+    background-color: var(--bg-header);
+    color: var(--text-light);
+    padding: 15px 20px;
+}
+
+.banner {
+    grid-area: banner;
+    background-color: var(--bg-header);
+    color: var(--text-light);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.tour-section {
+    grid-area: main;
+    padding: 40px 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.form-section {
+    grid-area: form;
+    padding: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--bg-header);
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.d-flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.links a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.options-inline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.tour-section h2,
+.form-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.d-flex-card {
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.d-flex-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 15px;
+}
+
+.gia {
+    color: var(--color-price);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--color-btn);
+    color: var(--text-light);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.section-form {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+    flex: 1;
+    padding: 8px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+}
+
+.form-group input[type="number"] {
+    width: 90px;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+}
+
+.form-group textarea {
+    height: 70px;
+    resize: vertical;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-btn-submit);
+    color: var(--text-light);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .tour-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .d-flex-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-group label,
+    .form-group .label-title {
+        width: 100%;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VietTravel World - Đặt tour du lịch trong nước và quốc tế.">
+    <meta name="keywords" content="du lịch, đặt tour, viet travel, hạ long, đà nẵng, phú quốc">
+    <title>Giới thiệu Công ty Du lịch & Đặt Tour | VietTravel World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body>
+    <header class="header animate__animated animate__fadeInDown">
+        <div class="container d-flex-header">
+            <div class="links">
+                <a href="#">Trang chủ</a>
+                <a href="#">Tour nổi bật</a>
+                <a href="#">Cẩm nang</a>
+                <a href="#">Đặt tour</a>
+            </div>
+            <div class="theme-switch">
+                <span>Mode</span>
+                <label class="switch">
+                    <input type="checkbox" id="themecolor">
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <section id="trang-chu" class="banner">
+        <div class="banner-content">
+            <h1 class="animate__animated animate__zoomIn">CÔNG TY DU LỊCH VIETTRAVEL WORLD</h1>
+            <p>Khai phá mọi hành trình - Trải nghiệm trọn khoảnh khắc</p>
+            <button class="button animate__animated animate__pulse animate__infinite">Khám phá ngay</button>
+        </div>
+    </section>
+
+    <main id="tour-noibat" class="tour-section">
+        <h2>Danh Sách Tour Nổi Bật</h2>
+        <div class="tour-grid">
+            <article class="d-flex-card">
+                <img src="Ha_Long.jpg" alt="Tour Hạ Long">
+                <div class="product-info">
+                    <h3>Du Lịch Vịnh Hạ Long</h3>
+                    <p><strong>Thời gian:</strong> 3 ngày 2 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> Hà Nội</p>
+                    <p class="gia">4.500.000 VNĐ</p>
+                </div>
+            </article>
+
+            <article class="d-flex-card">
+                <img src="Danang.jpg" alt="Tour Đà Nẵng">
+                <div class="product-info">
+                    <h3>Khám Phá Đà Nẵng - Hội An</h3>
+                    <p><strong>Thời gian:</strong> 4 ngày 3 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> TP. Hồ Chí Minh</p>
+                    <p class="gia">5.200.000 VNĐ</p>
+                </div>
+            </article>
+
+            <article class="d-flex-card">
+                <img src="Phuquoc.jpg" alt="Tour Phú Quốc">
+                <div class="product-info">
+                    <h3>Nghỉ Dưỡng Phú Quốc</h3>
+                    <p><strong>Thời gian:</strong> 3 ngày 2 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> TP. Hồ Chí Minh</p>
+                    <p class="gia">6.800.000 VNĐ</p>
+                </div>
+            </article>
+
+            <article class="d-flex-card">
+                <img src="Thailan.jpg" alt="Tour Bangkok">
+                <div class="product-info">
+                    <h3>Thái Lan: Bangkok - Pattaya</h3>
+                    <p><strong>Thời gian:</strong> 5 ngày 4 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> Hà Nội</p>
+                    <p class="gia">7.990.000 VNĐ</p>
+                </div>
+            </article>
+
+            <article class="d-flex-card">
+                <img src="Seoul.jpg" alt="Tour Seoul">
+                <div class="product-info">
+                    <h3>Hàn Quốc: Seoul - Nami</h3>
+                    <p><strong>Thời gian:</strong> 5 ngày 4 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> TP. Hồ Chí Minh</p>
+                    <p class="gia">14.500.000 VNĐ</p>
+                </div>
+            </article>
+
+            <article class="d-flex-card">
+                <img src="Osaka.jpg" alt="Tour Osaka">
+                <div class="product-info">
+                    <h3>Nhật Bản: Osaka - Osaka-Jo</h3>
+                    <p><strong>Thời gian:</strong> 6 ngày 5 đêm</p>
+                    <p><strong>Điểm khởi hành:</strong> Hà Nội</p>
+                    <p class="gia">28.900.000 VNĐ</p>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <section id="dat-tour" class="form-section">
+        <h2>Đặt Tour Du Lịch</h2>
+        <form class="section-form">
+            <div class="form-group">
+                <label for="hoten">Họ và tên:</label>
+                <input type="text" id="hoten" name="hoten" placeholder="Nhập họ và tên" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Điện thoại:</label>
+                <input type="tel"  placeholder="0901234567">
+            </div>
+
+            <div class="form-group">
+                <label for="ngaykh">Ngày khởi hành:</label>
+                <input type="date">
+            </div>
+
+            <div class="form-group">
+                <label for="sokhach">Số khách:</label>
+                <input type="number" value="1" min="1">
+            </div>
+
+            <div class="form-group">
+                <span class="label-title">Loại phòng:</span>
+                <div class="options-inline">
+                    <input type="radio" name="phong"> <label for="p_don">Đơn</label>
+                    <input type="radio"name="phong"> <label for="p_doi">Đôi</label>
+                    <input type="radio"name="phong"> <label for="p_gd">Gia đình</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tour">Chọn tour:</label>
+                <select>
+                    <option >Vịnh Hạ Long</option>
+                    <option >Đà Nẵng - Hội An</option>
+                    <option >Nghỉ dưỡng Phú Quốc</option>
+                    <option >Thái Lan: Bangkok</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <span class="label-title">Dịch vụ thêm:</span>
+                <div class="options-inline">
+                    <input type="checkbox" id="dv_hdv"> <label for="dv_hdv">HDV</label>
+                    <input type="checkbox" id="dv_xe"> <label for="dv_xe">Xe đưa đón</label>
+                    <input type="checkbox" id="dv_bh"> <label for="dv_bh">Bảo hiểm</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="yeucau">Yêu cầu đặc biệt:</label>
+                <textarea id="yeucau" name="yeucau" placeholder="Ghi chú thêm..."></textarea>
+            </div>
+
+            <div class="form-group-btn">
+                <button type="submit" class="btn-submit">Đặt Tour Ngay</button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>2026 VietTravel World. Tất cả quyền được bảo lưu.</p>
+    </footer>
+</body>
+
+</html>
