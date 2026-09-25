@@ -192,7 +192,7 @@ body {
     resize: vertical;
 }
 
-.button{
+.button {
     width: 100%;
     padding: 10px;
     background-color: var(--color-btn-submit);
