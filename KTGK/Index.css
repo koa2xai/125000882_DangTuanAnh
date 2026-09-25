@@ -194,7 +194,7 @@ body {
     resize: vertical;
 }
 
-.btn-submit {
+.button{
     width: 100%;
     padding: 10px;
     background-color: var(--color-btn-submit);
@@ -203,25 +203,23 @@ body {
     font-size: 16px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1023px) {
     .tour-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
     .tour-grid {
         grid-template-columns: 1fr;
     }
 
     .d-flex-header {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .form-group {
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .form-group label,
