@@ -29,8 +29,6 @@ body:has(#themecolor:checked) {
 body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
     display: grid;
     grid-template-areas:
         "header"
