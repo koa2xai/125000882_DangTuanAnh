@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+body:has(#themecolor:checked) {
+    background-color: #222;
+    color: #fff;
+}
+
+.header {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.banner {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.button {
+    margin-top: 15px;
+    width: 100px; height: 50px;
+    background-color: #ff4d4d;
+    color: white;
+    border-radius: 6px;
+}
+
+.tour-section {
+    padding: 50px 20px;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.tour-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.d-flex {
+    border: 1px solid #020202;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.d-flex img {
+    width: 100%;
+    height: 180px;
+}
+body:has(#themecolor:checked) .d-flex {
+    background-color: #333;
+    border-color: #555;
+}
+.product-info {
+    padding: 20px;
+}
+.gia {
+    color: #6400e6;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.section-form{
+    
+}
